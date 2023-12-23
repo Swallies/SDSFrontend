@@ -1,0 +1,14 @@
+{
+  "name": "sdsproject",
+  "version": "1.0.0",
+  "description": "Responsive portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive "
+  },
+  "author": "Herman Reckeweg",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
