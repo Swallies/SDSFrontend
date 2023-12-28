@@ -168,8 +168,6 @@ main {
     grid-area: job1; }
   .about-info .job2 {
     grid-area: job2; }
-  .about-info .job3 {
-    grid-area: job3; }
   .about-info .job {
     background: #2b4078;
     padding: 0.5rem;
@@ -177,7 +175,7 @@ main {
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 2.5rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
