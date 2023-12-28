@@ -29,6 +29,16 @@ $background-opacity: 0.9;
     }
 }
 
+@mixin box() {
+    outline: none;
+    border: none;
+    background: darken($primary-color, 10);
+    color:#fff;
+    text-transform: uppercase;
+    font-style: italic;
+
+}
+
 // Set Text Color
 @function set-text-color($color) {
     @if (lightness($color) > 40) {

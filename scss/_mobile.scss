@@ -10,8 +10,6 @@
     .projects {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    
 }
 
 
@@ -74,6 +72,19 @@
         width: 100%;
     }
     
+    #contact {
+        .contact-container {
+            form{
+                .column{
+                    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+                }
+            }
+        }
+    }
+
+    html{
+        font-size: 55%;
+    }
 
 }
 
@@ -96,4 +107,5 @@
       grid-template-columns: 1fr;
     }
 
+    
 }

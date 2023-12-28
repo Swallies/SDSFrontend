@@ -186,25 +186,6 @@ main {
       border-color: #8BD8BD;
       transition: all 0.5s ease-out; }
 
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem; }
-  .boxes div {
-    font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 0.5rem 1.5rem;
-    margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 1.5rem 2.5rem;
-      background: #8BD8BD;
-      color: #000; }
-      .boxes div:hover span {
-        color: #000; }
-
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -292,6 +273,65 @@ ul {
   color: #243665;
   background-color: #b1e5d3; }
 
+#contact {
+  height: auto;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  color: #fff; }
+  #contact h1 {
+    margin: 10rem 0;
+    font-size: 2.5rem;
+    text-align: center; }
+    #contact h1 span {
+      color: #8BD8BD;
+      font-style: italic; }
+  #contact .contact-container {
+    width: 90vw; }
+    #contact .contact-container form .column {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(25rem, 1fr));
+      grid-gap: 2rem; }
+      #contact .contact-container form .column .box {
+        outline: none;
+        border: none;
+        background: #17223f;
+        color: #fff;
+        text-transform: uppercase;
+        font-style: italic;
+        height: 4rem;
+        padding: 0 2rem; }
+        #contact .contact-container form .column .box::placeholder {
+          color: #8BD8BD; }
+    #contact .contact-container form .msg-box {
+      width: 100%;
+      resize: none;
+      height: 10rem;
+      padding: 1rem 2rem;
+      margin-top: 2rem;
+      outline: none;
+      border: none;
+      background: #17223f;
+      color: #fff;
+      text-transform: uppercase;
+      font-style: italic; }
+      #contact .contact-container form .msg-box::placeholder {
+        color: #8BD8BD; }
+    #contact .contact-container input[type="submit"] {
+      background: #5d7ac5;
+      outline: none;
+      border: none;
+      background: #17223f;
+      color: #fff;
+      text-transform: uppercase;
+      font-style: italic;
+      padding: 1rem 2rem;
+      margin: 2rem 0;
+      cursor: pointer; }
+      #contact .contact-container input[type="submit"]:hover {
+        background-color: #314a8b; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
@@ -332,7 +372,11 @@ ul {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .footer-col {
-    width: 100%; } }
+    width: 100%; }
+  #contact .contact-container form .column {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
+  html {
+    font-size: 55%; } }
 
 @media screen and (max-width: 500px) {
   main {
