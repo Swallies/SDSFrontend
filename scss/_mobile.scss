@@ -10,6 +10,8 @@
     .projects {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    
 }
 
 
@@ -60,7 +62,6 @@
         "bio"
         "job1"
         "job2";
-        
 
         grid-template-columns: 1fr;
     }
@@ -68,6 +69,12 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .footer-col{
+        width: 100%;
+    }
+    
+
 }
 
 
@@ -88,4 +95,5 @@
     .projects {
       grid-template-columns: 1fr;
     }
+
 }
